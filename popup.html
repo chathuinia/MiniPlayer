@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 250px; padding: 10px; font-family: Arial; }
+    .switch { position: relative; display: inline-block; width: 50px; height: 24px; }
+    .switch input { opacity: 0; }
+    .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: #ccc; transition: .4s; border-radius: 24px; }
+    .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 4px; bottom: 4px; background: white; transition: .4s; border-radius: 50%; }
+    input:checked + .slider { background: #4285f4; }
+    input:checked + .slider:before { transform: translateX(26px); }
+  </style>
+</head>
+<body>
+  <h3>Защита Алгоритмики</h3>
+  <label class="switch">
+    <input type="checkbox" id="phishing-protection" checked>
+    <span class="slider"></span>
+  </label> Блокировать фишинг<br>
+  
+  <label class="switch">
+    <input type="checkbox" id="keylogger-protection" checked>
+    <span class="slider"></span>
+  </label> Защита от кейлоггеров<br>
+  
+  <label class="switch">
+    <input type="checkbox" id="crypto-protection" checked>
+    <span class="slider"></span>
+  </label> Блокировка майнеров<br>
+</body>
+</html>

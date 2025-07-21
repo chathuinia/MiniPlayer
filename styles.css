@@ -1,0 +1,21 @@
+/* Защитные стили */
+input[type="password"] {
+  font-family: 'Arial', sans-serif; /* Защита от шпионских шрифтов */
+}
+
+/* Мини-YouTube */
+#mini-yt {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+#mini-yt iframe {
+  display: block;
+  margin-bottom: 10px;
+}

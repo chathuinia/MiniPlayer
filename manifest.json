@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Mini YouTube для Алгоритмики",
+  "version": "1.0",
+  "description": "Добавляет мини-плеер YouTube на страницы Алгоритмики",
+  "content_scripts": [
+    {
+      "matches": ["*://*.алгоритмика.рф/*", "*://*.algoritmika.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
